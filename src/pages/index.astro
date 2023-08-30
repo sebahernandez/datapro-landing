@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import box from "../assets/images/box.webp";
+import Reviews from "../components/Reviews.astro";
+import nicoPrudencio from "../assets/images/nico.webp";
+import bambino from "../assets/images/bambino.webp";
+import siom from "../assets/images/siom.webp";
+import quote from "../assets/images/quote.webp";
+import Hero from "../components/Hero.astro";
+import proyecto1 from "../assets/images/proyecto01.webp";
+import proyecto2 from "../assets/images/proyecto02.webp";
+import proyecto3 from "../assets/images/proyecto03.webp";
+import proyecto4 from "../assets/images/proyecto04.webp";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="container mx-auto py-10">
+    <Hero />
+    <section class="bg-section flex flex-wrap py-[100px]">
+      <div class="w-1/2 px-10 flex flex-col justify-center">
+        <h2 class="text-5xl py-5 font-bold">
+          Le ayudamos a construir su presencia en internet
+        </h2>
+        <p class="text-md text-stone-500">
+          Nuestro compromiso es asistirlo en la construcción sólida de su
+          presencia en línea. Desde el diseño cautivador de su sitio web hasta
+          estrategias efectivas de marketing digital, estamos aquí para guiarlo
+          en cada paso. Potenciamos su visibilidad en internet para que alcance
+          a su audiencia de manera impactante y perdurable. Juntos, construimos
+          su camino hacia el éxito en el mundo virtual.
+        </p>
+      </div>
+
+      <div class="w-1/2 px-10 flex justify-center">
+        <img
+          src={box.src}
+          width={box.width}
+          height={box.height}
+          alt="WordPress"
+        />
+      </div>
+    </section>
+
+    <section class="flex flex-wrap py-[100px]">
+      <div class="w-1/2 px-10 flex flex-col justify-center">
+        <Reviews
+          title="Nico Prudencio"
+          description="Resultados muy rápidos y atención personalizada de calidad superior! Lo recomiendo 100% para quienes quieran montar un negocio desde cero o también para adaptar una plataforma existente a un software nuevo."
+          img={nicoPrudencio.src}
+        />
+
+        <div class="ml-5 my-5">
+          <Reviews
+            title="Bambino Chile"
+            description="LLevamos 3 años trabajando con ellos, serios, responsables , totalmente recomndables"
+            img={bambino.src}
+          />
+        </div>
+
+        <Reviews
+          title="Siom Mineria"
+          description="Excelente Desarrolladores web"
+          img={siom.src}
+        />
+      </div>
+
+      <div class="w-1/2 px-10 flex justify-center items-center relative">
+        <div class="absolute top-[140px] left-0">
+          <img src={quote.src} alt="quote" />
+        </div>
+        <h3 class="text-6xl py-5 font-bold px-10">
+          Lo que dicen los clientes de nosotros en Google
+        </h3>
+        <div class="absolute bottom-[140px] right-[330px] rotate-180">
+          <img src={quote.src} alt="quote" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[100px] flex">
+      <div class="w-1/2 px-10">
+        <Card
+          title="Aumenta.cl"
+          body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
+          href="https://www.aumenta.cl"
+          img={proyecto1.src}
+        />
+      </div>
+      <div class="w-1/2 px-10">
+        <Card
+          title="FightFitness.cl"
+          body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
+          href="https://www.fightfitness.cl"
+          img={proyecto2.src}
+        />
+      </div>
+
+      <div class="w-1/2 px-10">
+        <Card
+          title="atletik.cl"
+          body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
+          href="https://www.atletik.cl"
+          img={proyecto3.src}
+        />
+      </div>
+
+      <div class="w-1/2 px-10">
+        <Card
+          title="FightFitness.cl"
+          body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
+          href="https://www.fightfitness.cl"
+          img={proyecto4.src}
+        />
+      </div>
+    </section>
+
+    <section class="py-[100px]">
+      <h3 class="text-5xl text-center font-bold">
+        Alunos clientes que han trabajado con nosotros
+      </h3>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    --color-titles: #113461;
+    --subtitles: 40px;
+  }
+  h1,
+  h2,
+  h3 {
+    color: var(--color-titles);
+  }
+
+  .bg-section {
+    padding: 100px 0px;
+    background: url("../assets/images/bg.webp") no-repeat;
+  }
+</style>
