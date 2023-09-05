@@ -13,6 +13,7 @@ import proyecto2 from "../assets/images/proyecto02.webp";
 import proyecto3 from "../assets/images/proyecto03.webp";
 import proyecto4 from "../assets/images/proyecto04.webp";
 import Brands from "../components/Brands.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,8 +35,8 @@ import Brands from "../components/Brands.astro";
       </div>
 
       <div class="w-1/2 px-10 flex justify-center">
-        <img
-          src={box.src}
+        <Image
+          src={box}
           width={box.width}
           height={box.height}
           alt="WordPress"
@@ -48,33 +49,33 @@ import Brands from "../components/Brands.astro";
         <Reviews
           title="Nico Prudencio"
           description="Resultados muy rápidos y atención personalizada de calidad superior! Lo recomiendo 100% para quienes quieran montar un negocio desde cero o también para adaptar una plataforma existente a un software nuevo."
-          img={nicoPrudencio.src}
+          img={nicoPrudencio}
         />
 
         <div class="ml-5 my-5">
           <Reviews
             title="Bambino Chile"
             description="LLevamos 3 años trabajando con ellos, serios, responsables , totalmente recomndables"
-            img={bambino.src}
+            img={bambino}
           />
         </div>
 
         <Reviews
           title="Siom Mineria"
           description="Excelente Desarrolladores web"
-          img={siom.src}
+          img={siom}
         />
       </div>
 
       <div class="w-1/2 px-10 flex justify-center items-center relative">
         <div class="absolute top-[140px] left-0">
-          <img src={quote.src} alt="quote" />
+          <Image src={quote} alt="quote" />
         </div>
         <h3 class="text-6xl py-5 font-bold px-10">
           Lo que dicen los clientes de nosotros en Google
         </h3>
         <div class="absolute bottom-[140px] right-[330px] rotate-180">
-          <img src={quote.src} alt="quote" />
+          <Image src={quote} alt="quote" />
         </div>
       </div>
     </section>
@@ -85,7 +86,7 @@ import Brands from "../components/Brands.astro";
           title="Aumenta.cl"
           body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
           href="https://www.aumenta.cl"
-          img={proyecto1.src}
+          img={proyecto1}
         />
       </div>
       <div class="w-1/2 px-10">
@@ -93,7 +94,7 @@ import Brands from "../components/Brands.astro";
           title="FightFitness.cl"
           body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
           href="https://www.fightfitness.cl"
-          img={proyecto2.src}
+          img={proyecto2}
         />
       </div>
 
@@ -102,7 +103,7 @@ import Brands from "../components/Brands.astro";
           title="atletik.cl"
           body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
           href="https://www.atletik.cl"
-          img={proyecto3.src}
+          img={proyecto3}
         />
       </div>
 
@@ -111,7 +112,7 @@ import Brands from "../components/Brands.astro";
           title="FightFitness.cl"
           body="Proyecto WordPress para empresa Aumenta, dedicada a proyectos inmobiliarios y comerciales. También en proyectos habitacionales para la primera y segunda vivienda."
           href="https://www.fightfitness.cl"
-          img={proyecto4.src}
+          img={proyecto4}
         />
       </div>
     </section>

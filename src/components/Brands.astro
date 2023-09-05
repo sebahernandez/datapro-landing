@@ -7,53 +7,34 @@ import aumenta from "../assets/images/aumenta.webp";
 import outdoorLife from "../assets/images/outdoorlife.webp";
 import befree from "../assets/images/befree.webp";
 import hoffman from "../assets/images/hofmann.webp";
+import { Image } from "astro:assets";
 ---
 
 <section>
   <div class="flex flex-col items-center space-y-4 md:space-y-8">
     <div class="flex justify-center space-x-4 md:space-x-8">
-      <img
-        src={bambinoCreations.src}
+      <Image
+        src={bambinoCreations}
         alt="Imagen 1"
         class="w-1/2 md:w-1/4 mb-4 md:mb-0"
       />
-      <img
-        src={champs.src}
-        alt="Imagen 2"
-        class="w-1/2 md:w-1/4 mb-4 md:mb-0"
-      />
-      <img
-        src={foodNutrition.src}
+      <Image src={champs} alt="Imagen 2" class="w-1/2 md:w-1/4 mb-4 md:mb-0" />
+      <Image
+        src={foodNutrition}
         alt="Imagen 3"
         class="w-1/2 md:w-1/4 mb-4 md:mb-0"
       />
-      <img
-        src={flowco.src}
-        alt="Imagen 4"
-        class="w-1/2 md:w-1/4 mb-4 md:mb-0"
-      />
+      <Image src={flowco} alt="Imagen 4" class="w-1/2 md:w-1/4 mb-4 md:mb-0" />
     </div>
     <div class="flex justify-center space-x-4 md:space-x-8">
-      <img
-        src={aumenta.src}
-        alt="Imagen 5"
-        class="w-1/2 md:w-1/4 mb-4 md:mb-0"
-      />
-      <img
-        src={outdoorLife.src}
+      <Image src={aumenta} alt="Imagen 5" class="w-1/2 md:w-1/4 mb-4 md:mb-0" />
+      <Image
+        src={outdoorLife}
         alt="Imagen 6"
         class="w-1/2 md:w-1/4 mb-4 md:mb-0"
       />
-      <img
-        src={befree.src}
-        alt="Imagen 7"
-        class="w-1/2 md:w-1/4 mb-4 md:mb-0"
-      />
-      <img
-        src={hoffman.src}
-        alt="Imagen 8"
-        class="w-1/2 md:w-1/4 mb-4 md:mb-0"
-      />
+      <Image src={befree} alt="Imagen 7" class="w-1/2 md:w-1/4 mb-4 md:mb-0" />
+      <Image src={hoffman} alt="Imagen 8" class="w-1/2 md:w-1/4 mb-4 md:mb-0" />
     </div>
   </div>
 </section>
